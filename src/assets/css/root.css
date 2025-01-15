@@ -5,12 +5,12 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #ffba19;
+    --primary: #85c27b;
     --primaryLight: #ffd675;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
-    --bodyTextColor: #4e4b66;
+    --bodyTextColor: #000000;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -106,7 +106,7 @@
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "League Spartan Variable";
     font-size: 100%;
     color: var(--bodyTextColor);
   }
@@ -159,26 +159,10 @@
   /* roboto-regular - latin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
+    font-family: "League Spartan Variable";
     font-weight: 400;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* roboto-700 - latin */
-  @font-face {
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 700;
-    font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* roboto-900 - latin */
-  @font-face {
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 900;
-    font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""), url("/assets/fonts/LeagueSpartan-VF.woff2") format("woff2"), url("/assets/fonts/LeagueSpartan-VF.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 }
 /* Reset Margins */
@@ -193,7 +177,7 @@
 @media only screen and (min-width: 3000px) {
   body,
   html {
-    font-size: 0.55vw;
+    font-size: 0.75vw;
   }
 }
 /*-- -------------------------- -->
@@ -274,7 +258,6 @@
     box-sizing: border-box;
     padding: 0.75rem 1rem;
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "Roboto", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #cs-navigation .cs-container {
@@ -374,6 +357,7 @@
     left: auto;
     right: 0;
     opacity: 0;
+    visibility: hidden;
     transform: scaleX(0);
     background-color: #fff;
     height: 100vh;
@@ -479,6 +463,7 @@
   }
   #cs-navigation.cs-active .cs-ul-wrapper {
     opacity: 1;
+    visibility: visible;
     transform: scaleX(1);
     transition-delay: 0.2s;
   }
@@ -538,7 +523,7 @@
     border: none;
     background-color: transparent;
     font-family: inherit;
-    font-size: inherit;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     cursor: pointer;
     appearance: none;
   }
@@ -723,13 +708,12 @@
   #cs-navigation {
     z-index: 10000;
     position: fixed;
-    background-color: #fff;
+    background-color: #f4f7f3;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0 1rem;
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "Roboto", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #cs-navigation .cs-container {
@@ -751,9 +735,9 @@
     align-items: center;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
-    height: 4.0625rem;
-    max-width: 21.875rem;
-    width: 18.4%;
+    height: 5.4166666667rem;
+    max-width: 29.1666666667rem;
+    width: 20.4%;
     padding: 0;
   }
   #cs-navigation .cs-logo img {
@@ -784,7 +768,7 @@
     margin: 0;
     text-decoration: none;
     /* 14px - 16px */
-    font-size: clamp(0.875rem, 1vw, 1rem);
+    font-size: clamp(0.775rem, 1.3vw, 1.3rem);
     line-height: 1.5em;
     color: var(--bodyTextColor);
   }
@@ -1032,7 +1016,7 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   #footer {
-    background: #1c1c1c;
+    background: #f4f7f3;
     padding: 5.25rem 0 1.25rem;
     font-size: min(4vw, 1.2em);
   }
@@ -1051,8 +1035,7 @@
   }
   #footer .left-section .logo img {
     display: block;
-    height: 100%;
-    width: auto;
+    width: 100%;
   }
   #footer .left-section p {
     opacity: 0.9;
@@ -1086,12 +1069,12 @@
     margin-bottom: 0.75rem;
     list-style: none;
     font-size: 1.125rem;
-    color: #fff;
+    color: #000000;
   }
   #footer .right-section .lists ul li a {
     text-decoration: none;
     line-height: 1.1666666667em;
-    color: #fff;
+    color: #000000;
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
@@ -1104,7 +1087,7 @@
     font-size: 1.125rem;
     line-height: 1.1666666667em;
     font-weight: bold;
-    color: #fff;
+    color: var(--bodyTextColor);
   }
   #footer .right-section .lists ul h2:before {
     position: absolute;
@@ -1145,7 +1128,7 @@
     width: 96%;
     font-size: 1rem;
     line-height: 2.25rem;
-    color: #fff;
+    color: var(--bodyTextColor);
     text-align: center;
   }
   #footer .credit a {
