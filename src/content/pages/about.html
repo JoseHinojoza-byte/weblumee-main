@@ -7,7 +7,6 @@ eleventyNavigation:
     key: About Us
     order: 200
 ---
-
 {% extends "layouts/base.html" %}
 
 {% block head %}
@@ -32,45 +31,48 @@ eleventyNavigation:
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
     <!-- ============================================ -->
-
     <section id="sbs">
         <div class="cs-container">
-            <!-- Left Image Section -->
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
                     <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
                     <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="modern workspace with cabinet" loading="lazy" width="400" height="563">
                 </picture>
                 <picture class="cs-picture cs-picture2">
                     <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
                     <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="web development process illustration" loading="lazy" width="400" height="563">
                 </picture>
             </div>
-            <!-- Right Content Section-->
             <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+                <span class="cs-topper">About</span>
+                <h2 class="cs-title">Helping Small Businesses Succeed Online</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Focused on delivering affordable and effective web development solutions, this freelance service specializes in building static websites for small businesses. Every project is crafted to highlight what makes each business unique while ensuring fast load times, clean design, and mobile responsiveness.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    With a streamlined approach, businesses receive custom-built websites that are easy to maintain and optimized for visibility on search engines. The goal is to create a professional web presence that builds trust and drives engagement—without the high costs of large agencies.
                 </p>
                 <div class="cs-flex-group">
                     <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                        Simple, honest, and reliable web solutions for small businesses looking to grow their reach and communicate their value clearly online.
                     </p>
                     <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                    <span class="cs-job">Founder / Web Developer</span>
+                    <img 
+                        class="cs-quote-icon"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+                        alt="quote icon"
+                        width="136"
+                        height="77"/>
                 </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
+                <a href="/about" class="cs-button-solid">More About This Service</a>
             </div>
         </div>
     </section>
-
     {% include 'components/cta.html' %}
 
 {% endblock %}
