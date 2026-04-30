@@ -1,30 +1,166 @@
 ---
 title: 'Services | Weblumee'
-description: 'Description for <meta> description and OG tags'
+description: 'Custom website design, local SEO, and mobile-first development for small businesses in the Chicagoland area. Starting at $700 — transparent pricing, no surprises.'
+preloadImg: '/assets/images/landing.jpg'
 permalink: 'services/'
 eleventyNavigation:
     key: Services
-    order: 200
+    order: 250
 ---
 {% extends "layouts/base.html" %}
 
-
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/reviews.css">
+    <link rel="stylesheet" href="/assets/css/services.css"/>
 {% endblock %}
 
 {% block body %}
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                    Hero                      -->
     <!-- ============================================ -->
-
     <section id="int-hero">
-        <h1 id="home-h">Services</h1>
-        <picture class="cs-picture">
+        <h1>Our Services</h1>
+        <picture>
             <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
             <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="web design services" width="2500" height="1667" loading="eager">
         </picture>
     </section>
 
-    {% endblock %}
+    <!-- ============================================ -->
+    <!--             Services Detail                  -->
+    <!-- ============================================ -->
+    <section id="services-page">
+        <div class="cs-container">
+            <div class="cs-intro">
+                <span class="cs-topper">What You Get</span>
+                <h2 class="cs-title">Services Built for <span class="cs-color">Real Results</span></h2>
+                <p class="cs-text">
+                    Every Weblumee project is hand-coded from scratch — no WordPress, no Wix, no page builders. That means faster load times, cleaner code, and a site that performs on Google the way it should. Serving small businesses across the Chicagoland area and beyond.
+                </p>
+            </div>
+            <ul class="cs-item-list">
+                <li class="cs-item">
+                    <div class="cs-item-left">
+                        <span class="cs-number">01</span>
+                        <span class="cs-topper">Core Offering</span>
+                        <h3 class="cs-h3">Custom Website Design &amp; Development</h3>
+                    </div>
+                    <div class="cs-item-right">
+                        <p class="cs-text">
+                            Your website is built from scratch to match your brand, your voice, and your goals — not from a generic template. Every line of code is written by hand, which means your site loads fast, works perfectly on every device, and stands out from the competition.
+                        </p>
+                        <p class="cs-text">
+                            Most small business websites are built on slow, bloated platforms that hurt search rankings and frustrate visitors. A hand-coded site is lighter, faster, and more reliable — which means lower bounce rates and more customers actually reaching out.
+                        </p>
+                        <ul class="cs-feature-list">
+                            <li class="cs-feature">Up to 5 pages included ($100 per additional page)</li>
+                            <li class="cs-feature">Custom design tailored to your brand</li>
+                            <li class="cs-feature">Fast load times — no bloated plugins or themes</li>
+                            <li class="cs-feature">Contact forms &amp; Google Maps integration</li>
+                            <li class="cs-feature">2-week average turnaround</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-item-left">
+                        <span class="cs-number">02</span>
+                        <span class="cs-topper">Get Found</span>
+                        <h3 class="cs-h3">Local SEO Optimization</h3>
+                    </div>
+                    <div class="cs-item-right">
+                        <p class="cs-text">
+                            A beautiful website doesn't help if no one can find it. Every Weblumee site is built with local search in mind — from the structure of the HTML to the metadata, heading hierarchy, and page speed. SEO done right, from the ground up.
+                        </p>
+                        <p class="cs-text">
+                            Local SEO helps your business appear when customers in the Chicagoland area search for what you offer. No monthly retainer needed — the SEO foundation is built into every project at no extra charge.
+                        </p>
+                        <ul class="cs-feature-list">
+                            <li class="cs-feature">Semantic HTML for search engine readability</li>
+                            <li class="cs-feature">Meta titles, descriptions &amp; Open Graph tags</li>
+                            <li class="cs-feature">Google-friendly page speed &amp; Core Web Vitals</li>
+                            <li class="cs-feature">Schema markup for local businesses</li>
+                            <li class="cs-feature">XML sitemap &amp; robots.txt included</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-item-left">
+                        <span class="cs-number">03</span>
+                        <span class="cs-topper">Every Screen</span>
+                        <h3 class="cs-h3">Mobile-First Responsive Design</h3>
+                    </div>
+                    <div class="cs-item-right">
+                        <p class="cs-text">
+                            Over 60% of web searches happen on mobile devices. Every Weblumee site is designed and coded mobile-first, meaning it looks sharp and loads quickly whether your customers are on a phone, tablet, or desktop.
+                        </p>
+                        <p class="cs-text">
+                            Google also ranks mobile-friendly sites higher — so responsive design isn't just about looks, it directly affects how easily customers can find you. Every breakpoint is tested before launch.
+                        </p>
+                        <ul class="cs-feature-list">
+                            <li class="cs-feature">Designed and tested on all screen sizes</li>
+                            <li class="cs-feature">Touch-friendly navigation and buttons</li>
+                            <li class="cs-feature">Optimized images for mobile data speeds</li>
+                            <li class="cs-feature">Consistent experience across all browsers</li>
+                            <li class="cs-feature">Google mobile-friendly certified</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Pricing                     -->
+    <!-- ============================================ -->
+    <section id="pricing">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Transparent Pricing</span>
+                <h2 class="cs-title">No Hidden Fees. <span class="cs-color">No Surprises.</span></h2>
+                <p class="cs-text">Know exactly what you're paying before we start. No contracts, no retainers, no nonsense.</p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-price-header">
+                        <span class="cs-package">Website Build</span>
+                        <div class="cs-price-wrap">
+                            <span class="cs-price">$700</span>
+                            <span class="cs-duration">one-time</span>
+                        </div>
+                    </div>
+                    <ul class="cs-feature-list">
+                        <li class="cs-feature">Up to 5 pages included</li>
+                        <li class="cs-feature">Custom hand-coded design</li>
+                        <li class="cs-feature">Mobile-responsive on all devices</li>
+                        <li class="cs-feature">SEO-optimized from day one</li>
+                        <li class="cs-feature">2-week average turnaround</li>
+                        <li class="cs-feature">Additional pages — $100 each</li>
+                    </ul>
+                    <a href="/contact" class="cs-button-solid">Get Started</a>
+                </li>
+                <li class="cs-item cs-popular">
+                    <div class="cs-popular-tag">Recommended</div>
+                    <div class="cs-price-header">
+                        <span class="cs-package">Monthly Care Plan</span>
+                        <div class="cs-price-wrap">
+                            <span class="cs-price">$30</span>
+                            <span class="cs-duration">/ month</span>
+                        </div>
+                    </div>
+                    <ul class="cs-feature-list">
+                        <li class="cs-feature">Secure website hosting</li>
+                        <li class="cs-feature">Unlimited content edits</li>
+                        <li class="cs-feature">SSL certificate included</li>
+                        <li class="cs-feature">Performance monitoring</li>
+                        <li class="cs-feature">Priority support</li>
+                        <li class="cs-feature">New page additions — $50 each</li>
+                    </ul>
+                    <a href="/contact" class="cs-button-solid">Get Started</a>
+                </li>
+            </ul>
+            <p class="cs-note">Proudly serving the Chicagoland area. Remote projects always welcome.</p>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}
